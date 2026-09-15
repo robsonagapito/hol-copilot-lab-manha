@@ -34,7 +34,25 @@
   transition: all 0.3s ease;
 }
 
+.app-header nav button {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
 .app-header nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.app-header nav button:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
@@ -268,7 +286,9 @@
 }
 
 .review-form input,
-.review-form textarea {
+.review-form textarea,
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
@@ -276,7 +296,8 @@
   border-radius: 4px;
 }
 
-.review-form button {
+.review-form button,
+.contact-modal-actions button {
   padding: 0.5rem 1rem;
   background-color: #667eea;
   color: white;
@@ -287,6 +308,17 @@
 
 .review-form button:hover {
     background-color: #5a6fd8;
+}
+
+.contact-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.contact-modal-actions .cancel-btn {
+    background-color: #ccc;
+    color: #333;
 }
 
 .add-to-cart-btn {
